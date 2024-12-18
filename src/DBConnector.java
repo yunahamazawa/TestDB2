@@ -2,6 +2,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+
 public class DBConnector {
 	private static String driverName = "com.mysql.jdbc.Driver";
 
