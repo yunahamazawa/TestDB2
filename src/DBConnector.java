@@ -12,17 +12,17 @@ public class DBConnector {
 	private static String user = "root";
 	private static String password = "mysql";
 
-public Connection getConnection() {
-Connection con = null;
+	public Connection getConnection() {
+		Connection con = null;
 
-try{
-Class.forName(driverName);
-con = DriverManager.getConnection(url,user,password);
-} catch (ClassNotFoundException e) {
-e.printStackTrace() ;
-} catch (SQLException e) {
-e.printStackTrace() ;
-}
-return con ;
-}
+		try{
+			Class.forName(driverName);
+			con = DriverManager.getConnection(url,user,password);
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace() ;
+		} catch (SQLException e) {
+			e.printStackTrace() ;
+		}
+		return con ;
+	}
 }
