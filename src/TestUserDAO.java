@@ -8,7 +8,7 @@ public class TestUserDAO {
 
 	String name = "";
 	String password = "";
- public void select(String name,String password) {
+ public void select(String name, String password) {
 	 DBConnector db = new DBConnector();
 	 Connection con = db.getConnection();
 
