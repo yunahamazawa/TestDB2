@@ -6,6 +6,8 @@ public class Test {
 		dao.select("jiro", "456");
 		dao.select("hanako", "789");
 		dao.selectByName("taro");
+		dao.selectByPassword("123");
+
 
 	}
 }
