@@ -9,8 +9,8 @@ public class TestUserDAO {
 	String name = "";
 	String password = "";
  public void select(String name, String password) {
-	 DBConnector db = new DBConnector();
-	 Connection con = db.getConnection();
+	 DBConnector db2 = new DBConnector();
+	 Connection con = db2.getConnection();
 
 
 	 String sql ="select * from test_table where user_name=? and password=?";

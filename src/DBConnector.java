@@ -8,11 +8,11 @@ public class DBConnector {
 	private static String driverName = "com.mysql.jdbc.Driver";
 
 	private static String url =
-"jdbc:mysql://localhost/testdb?autoReconnect=true&useSSL=false";
+			"jdbc:mysql://localhost/testdb?autoReconnect=true&useSSL=false";
 
 
 	private static String user = "root";
-	private static String password = "mysql";
+	private static String password = "";
 
 
 	public Connection getConnection() {
@@ -21,9 +21,11 @@ public class DBConnector {
 		try{
 			Class.forName(driverName);
 			con = DriverManager.getConnection(url,user,password);
-		} catch (ClassNotFoundException e) {
+		}
+		catch (ClassNotFoundException e) {
 			e.printStackTrace() ;
-		} catch (SQLException e) {
+		}
+		catch (SQLException e) {
 			e.printStackTrace() ;
 		}
 		return con ;
